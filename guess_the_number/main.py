@@ -1,6 +1,15 @@
 from random import randint
 
 
+def main():
+    while True:
+        x = input()
+        if is_valid(x):
+            x = int(x)
+        else:
+            print('А может быть все-таки введем целое число от 1 до 100?')
+
+
 def is_valid(in_num):
     return in_num.isdigit() and 1 <= int(in_num) <= 100
 
@@ -18,4 +27,4 @@ def lucky():
 
 
 if __name__ == '__main__':
-    lucky()
+    main()
