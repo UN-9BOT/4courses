@@ -1,4 +1,4 @@
-# about this repo
+## about this repo
 
 This repository is used to save mini-projects from various Python courses.
 
@@ -12,11 +12,26 @@ This repository is used to save mini-projects from various Python courses.
 догадка меньше случайного числа, то программа должна вывести сообщение 'Слишком мало, попробуйте еще раз'. Если
 пользователь угадывает число, то программа должна поздравить его и вывести сообщение 'Вы угадали, поздравляем!'.
 
-**modules:** 
+**modules:**
+
 - math
 - random
 
-**features:** 
+**features:**
+
 - подсчёт попыток и вывод результата
 - возможность реплея
 - установка правой границы
+
+## magic_ball8 - магический шар 8
+
+**link:** ["Поколение Python": курс для начинающих](https://stepik.org/lesson/349846/step/1?unit=333701)
+
+**description:**
+магический шар 8 (шар судьбы) — шуточный способ предсказывать будущее. Программа должна просить пользователя задать
+некий вопрос, чтобы случайным образом на него ответить.
+
+**modules:**
+- random
+
+**features:** 
