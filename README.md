@@ -8,6 +8,7 @@ This repository is used to save mini-projects from various Python courses.
 - [magic_ball8](#magic_ball8---магический-шар-8)
 - [secure_pass_generator](#secure_pass_generator---генератор-безопасных-паролей)
 - [caesar_cipher](#caesar_cipher---шифр-цезаря)
+- [guess_the_word](#guess_the_word---угадайка-слов)
 
 ## guess_the_number - угадай число
 
@@ -69,4 +70,23 @@ This repository is used to save mini-projects from various Python courses.
 
 **modules:**
 
-**features:** 
+**features:**
+
+## guess_the_word - угадайка слов
+
+**link:** ["Поколение Python": курс для начинающих](https://stepik.org/lesson/349847/step/1?unit=333702)
+
+**description:**
+программа загадывает слово, а пользователь должен его угадать. Изначально все буквы слова неизвестны. Также рисуется
+виселица с петлей. Пользователь предлагает букву, которая может входить в это слово. Если такая буква есть в слове, то
+программа ставит букву столько раз, сколько она встречается в слове. Если такой буквы нет, к виселице добавляется круг в
+петле, изображающий голову. Пользователь продолжает отгадывать буквы до тех пор, пока не отгадает всё слово. За каждую
+неудачную попытку добавляется еще одна часть туловища висельника (обычно их 6: голова, туловище, 2 руки и 2 ноги.
+
+**modules:**
+
+- random
+
+**features:**
+
+- separated the body parts into a separate module to increase readability
