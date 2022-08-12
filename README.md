@@ -7,6 +7,7 @@ This repository is used to save mini-projects from various Python courses.
 - [guess_the_number](#guess_the_number---угадай-число)
 - [magic_ball8](#magic_ball8---магический-шар-8)
 - [secure_pass_generator](#secure_pass_generator---генератор-безопасных-паролей)
+- [caesar_cipher](#caesar_cipher---шифр-цезаря)
 
 ## guess_the_number - угадай число
 
@@ -54,5 +55,18 @@ This repository is used to save mini-projects from various Python courses.
 **modules:**
 
 - random
+
+**features:**
+
+## caesar_cipher - шифр цезаря
+
+**link:** ["Поколение Python": курс для начинающих](https://stepik.org/lesson/352860/step/1?unit=336821)
+
+**description:**
+На вход программе подается строка текста на английском языке, в которой нужно зашифровать все слова. Каждое слово строки
+следует зашифровать с помощью шифра Цезаря (циклического сдвига на длину этого слова). Строчные буквы при этом остаются
+строчными, а прописные – прописными.
+
+**modules:**
 
 **features:** 
