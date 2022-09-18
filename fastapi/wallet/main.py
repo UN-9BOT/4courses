@@ -46,12 +46,15 @@ def index(request: Request):
 @app.get("/wallet/{address}", response_class=HTMLResponse)
 def wallet(address: str, request: Request):
     target_address = None
+    wallet_info = None
     for w in all_wallets:
         if address == w.address:
             target_address = address
+            wallet_info = w.info()
             break
-        else:
-            raise HTTPException(status_code=404, detail='Wallet not created')
+    else:
+        raise HTTPException(status_code=404, detail='Wallet not created')
     return templates.TemplateResponse('address.html',
-                                      {'request': request, 'address': target_address, 'all_wallets': all_wallets})
+                                      {'request': request, 'target_address': target_address, 'wallet_info': wallet_info})
+
 
