@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wallet -</title>
+</head>
+<body>
+    <h1>Wallet {{ address }}</h1>
+    <ul>
+        {% for wallet in all_wallets %}
+        {% if wallet.address == address  %}
+            <li>{{ wallet.info() }}</li>
+        {% endif %}
+        {% endfor %}
+
+    </ul>
+</body>
+</html>

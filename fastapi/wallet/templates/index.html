@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wallet</title>
+</head>
+<body>
+    <h1>WALLET</h1>
+    <ul>
+        {% for wallet in all_wallets %}
+        <li>{{ wallet.info() }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
